@@ -1,0 +1,177 @@
+body {
+  background-color: rgb(230, 230, 230);
+  overflow-x: hidden;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  color: #a25151;
+}
+
+input[type="checkbox"]{
+  border-color: #a25151 !important;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+  background-color: #a25151;
+}
+
+.swiper-pagination-bullet-active {
+  background: #a25151 !important;
+}
+
+dd {
+  padding-left: 20px;
+}
+
+dt {
+  margin-top: 30px;
+}
+
+dl {
+  font-size: 30px;
+}
+
+label {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.cart-amount {
+  background-color: #a25151;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.star{
+  width: 55px;
+  height: 55px;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.bin {
+  width: 25px;
+  height: 25px;
+}
+
+.bg-dark {
+  background-color: black !important;
+}
+
+.logo {
+  width: 100px;
+  margin: 10px;
+}
+
+.active {
+  color: #a25151 !important;
+  font-weight: bold;
+}
+
+.navbar-ico {
+  width: 45px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar {
+  margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: white;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #a25151 #000000;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a25151;
+  border-radius: 10px;
+  border: 3px solid #000000;
+}
+
+@media only screen and (max-width: 991px) {
+  .f1 {
+    order: -1;
+  }
+}
